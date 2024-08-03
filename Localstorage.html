@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        local storage
+    </h1>
+    <p>
+        local storage woh storage hai jo hum browser mai store krte hai mtlb permanently
+    </p>
+
+    <script>
+        localStorage.setItem("name", "deepti");
+        localStorage.setItem("age", 12);
+        let product = {
+            name: "xyz",
+            price: 12
+        };
+        localStorage.setItem("Product", product);
+        localStorage.setItem("Product", JSON.stringify(product));
+        //undefined
+        localStorage.getItem('name');
+        //'deepti'
+        localStorage.getItem("Product");
+        //'{"name":"xyz","price":12}'
+        localStorage.removeItem("age");
+        //undefined
+        localStorage.clear();
+        undefined
+    </script>
+</body>
+
+</html>

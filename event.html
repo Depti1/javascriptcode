@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .box{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    border: 2px solid black;
+    background-color: red;
+  }
+</style>
+<body>
+    <h1>add event listener</h1>
+<div class="container">
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+  <div class="box" id="box4"></div>
+  <div class="box" id="box5"></div>
+</div>
+
+
+
+
+
+
+
+    <script>
+    /*event bubbling and capturing
+    document.querySelector(".container").addEventListener('click' , function(){console.log("i am clicked container")}, true);
+    
+    document.querySelector("#box5").addEventListener('click' , function(){
+      console.log("i am clicked my id is box 5 ");
+    } , true);*/
+    document.querySelector(".container").addEventListener('click' , function(event){
+      console.log(event.target);
+      let deleteBox = event.target;
+      deleteBox.remove();
+    })
+    </script>
+</body>
+</html>

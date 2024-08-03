@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>anoymous functions</h1>
+    
+
+
+
+
+
+
+
+
+
+    <script>
+      let sum =  function(num1 , num2){
+            return num1 + num2 ;
+        }
+
+      let sumOfThreeNumbers =  function(num1 , num2 , num3 , sumOfTwoNumbers){
+            sum1 = sumOfTwoNumbers(num1 ,num2);
+            return sumOfTwoNumbers(sum1, num3);
+        }
+
+        console.log(sumOfThreeNumbers(3,4,5,sum));
+        console.log(typeof sumOfThreeNumbers);
+
+    
+    </script>
+</body>
+</html>

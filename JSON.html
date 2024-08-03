@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>java script object notation</h1>
+
+
+ <script>
+    let person = {
+        name : "deepti",
+        age : 21,
+        sem : 6,
+        marks : {
+            eng : 12,
+            hindi: 13
+        }
+
+    };
+    console.log(typeof person);
+   // object
+   
+//an js object is converted into string using stringyfy
+let str = JSON.stringify(person);
+
+console.log(str);
+//{"name":"deepti","age":21,"sem":6,"marks":{"eng":12,"hindi":13}}
+
+console.log(typeof str);
+//string
+
+//an string is converted into a object using parse....
+let newObject = JSON.parse(str);
+
+console.log(newObject);
+// {name: 'deepti', age: 21, sem: 6, marks: {…}}
+
+console.log(typeof newObject);
+// object
+
+ </script>   
+</body>
+</html>
