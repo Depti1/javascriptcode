@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>object constructor in java script</h1>
+</body>
+
+
+
+
+<script>
+    const user = {
+        userName : "deepti",
+        salary : 1200,
+        age : 18,
+        printName : function(){
+          //  console.log(`my name is ${this.userName}`); current context mai run karega 
+          console.log(this); //yeh current object dega
+        }
+    }
+    console.log(user); 
+    console.log//yeh window object dega
+
+
+</script>
+</html>
